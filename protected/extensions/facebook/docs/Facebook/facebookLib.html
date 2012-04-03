@@ -1,0 +1,2904 @@
+<html>
+<head>
+<title>Docs For Class facebookLib</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">Facebook</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        
+                                    
+                              		  [ <a href="../classtrees_Facebook.html" class="menu">class tree: Facebook</a> ]
+		  [ <a href="../elementindex_Facebook.html" class="menu">index: Facebook</a> ]
+		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../li_Facebook.html">Facebook</a><br />
+            <br /><br />
+                        <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../Facebook/_facebookLib.php.html">		facebookLib.php
+		</a><br>
+	  </div><br />
+      
+      
+            <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../Facebook/facebookLib.html">facebookLib</a><br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: facebookLib</h1>
+Source Location: /facebookLib.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre>Facebook
+   |
+   --facebookLib</pre><br />
+<div class="description">Provides *Simple* access and a wrapper for various facebook calls</div><br /><br />
+<h4>Author(s):</h4>
+<ul>
+          <li>Vadim Gabriel &lt;<a href="mailto:vadimg88@gmail.com">vadimg88@gmail.com</a>&gt;</li>
+            </ul>
+
+
+
+
+        
+    
+<h4>Version:</h4>
+<ul>
+  <li>0.1 Alpha</li>
+</ul>
+
+        
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../Facebook/facebookLib.html#var$CURL_OPTS">$CURL_OPTS</a></li>
+    <li><a href="../Facebook/facebookLib.html#var$decodeJson">$decodeJson</a></li>
+    <li><a href="../Facebook/facebookLib.html#var$disableSSLCheck">$disableSSLCheck</a></li>
+    <li><a href="../Facebook/facebookLib.html#var$errorCode">$errorCode</a></li>
+    <li><a href="../Facebook/facebookLib.html#var$errorMessage">$errorMessage</a></li>
+    <li><a href="../Facebook/facebookLib.html#var$headers">$headers</a></li>
+    <li><a href="../Facebook/facebookLib.html#var$response">$response</a></li>
+    <li><a href="../Facebook/facebookLib.html#var$throwExceptions">$throwExceptions</a></li>
+  </ul>
+</td>
+
+<td valign="top">
+<h3><a href="#class_consts">Constants</a></h3>
+<ul>
+    <li><a href="../Facebook/facebookLib.html#constVERSION">VERSION</a></li>
+  </ul>
+</td>
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../Facebook/facebookLib.html#method__construct">__construct</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodcallApi">callApi</a></li>
+    <li><a href="../Facebook/facebookLib.html#methoddoCall">doCall</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodget">get</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetBooks">getBooks</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetDecodeJson">getDecodeJson</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetErrorCode">getErrorCode</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetErrorMessage">getErrorMessage</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetEventAttenders">getEventAttenders</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetEvents">getEvents</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetFriends">getFriends</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetGroups">getGroups</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetHeaders">getHeaders</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetInfo">getInfo</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetLikes">getLikes</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetLinks">getLinks</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetMovies">getMovies</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetNewsFeed">getNewsFeed</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetNotes">getNotes</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetPhotos">getPhotos</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetPicture">getPicture</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetProfileFeed">getProfileFeed</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetResponse">getResponse</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetSSLStatus">getSSLStatus</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetThrowExceptions">getThrowExceptions</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodgetVideos">getVideos</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodincludeScript">includeScript</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodmakeRequest">makeRequest</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodpostAlbum">postAlbum</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodpostAttending">postAttending</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodpostComment">postComment</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodpostEvent">postEvent</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodpostFeed">postFeed</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodpostLike">postLike</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodpostLink">postLink</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodpostMaybeAttending">postMaybeAttending</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodpostNotAttending">postNotAttending</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodpostNote">postNote</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodpostPhoto">postPhoto</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodpostStatus">postStatus</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodsearch">search</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodsetDecodeJson">setDecodeJson</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodsetErrorCode">setErrorCode</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodsetErrorMessage">setErrorMessage</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodsetHeaders">setHeaders</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodsetResponse">setResponse</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodsetSSLStatus">setSSLStatus</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodsetThrowExceptions">setThrowExceptions</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodshowActivity">showActivity</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodshowComments">showComments</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodshowFacePile">showFacePile</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodshowLike">showLike</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodshowLikeBox">showLikeBox</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodshowLiveStream">showLiveStream</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodshowLoginButton">showLoginButton</a></li>
+    <li><a href="../Facebook/facebookLib.html#methodshowRecommendations">showRecommendations</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a44">44</a>]<br />
+Provides *Simple* access and a wrapper for various facebook calls<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Vadim Gabriel &lt;<a href="mailto:vadimg88@gmail.com">vadimg88@gmail.com</a>&gt;</td>
+  </tr>
+  <tr>
+    <td><b>version:</b>&nbsp;&nbsp;</td><td>0.1 Alpha</td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$CURL_OPTS"></a>
+	<p></p>
+	<h4>static $CURL_OPTS = <span class="value">array(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CURLOPT_CONNECTTIMEOUT&nbsp;=&gt;&nbsp;10,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CURLOPT_RETURNTRANSFER&nbsp;=&gt;&nbsp;true,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CURLOPT_TIMEOUT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;60,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CURLOPT_PORT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;80,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CURLOPT_USERAGENT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&gt;&nbsp;'facebook-php-2.0',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</span></h4>
+	<p>[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a54">54</a>]</p>
+  Default options for curl.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$decodeJson"></a>
+	<p></p>
+	<h4>$decodeJson = <span class="value">&nbsp;false</span></h4>
+	<p>[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a113">113</a>]</p>
+  By default facebook returns most of the time a json object<br /><br /><p>You can enable this to use json_decode to decode the json object into a php object</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>boolean</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$disableSSLCheck"></a>
+	<p></p>
+	<h4>$disableSSLCheck = <span class="value">&nbsp;false</span></h4>
+	<p>[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a82">82</a>]</p>
+  whether to disable the SSL check when performing the CURL calls  By default facebook uses SSL verifications, This causes the calls to fails on sites that do not use an SSL  certified domain or include a certification file.<br /><br /><p>It's recommended not to set this to true but if the following fixes does not work you can use this a a last resort.</p><p><ol><li>) Download: http://www.gknw.net/php/phpscripts/mk-ca-bundle.phps to c:\</li><li>) Open cmd and run: c:&gt;php mk-ca-bundle.php</li><li>) Output should read: Downloading 'certdata.txt' ...Done (140 CA certs processed).</li><li>) This file should be created: c:\ca-bundle.crt</li><li>) Move c:\ca-bundle.crt to your preferred path</li><li>) After initiating this library add the following line right below that:</li></ol>  facebookLib::$CURL_OPTS[CURLOPT_CAINFO] = 'path\to\cert\ca-bundle.crt';</p><p>You'll end up with something looking like this:  include_once &quot;facebookLib.php&quot;;  $facebook = new facebookLib($config);  facebookLib::$CURL_OPTS[CURLOPT_CAINFO] = 'path\to\cert\ca-bundle.crt';</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>boolean</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$errorCode"></a>
+	<p></p>
+	<h4>$errorCode = <span class="value">&nbsp;0</span></h4>
+	<p>[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a87">87</a>]</p>
+  the error code if one exists<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$errorMessage"></a>
+	<p></p>
+	<h4>$errorMessage = <span class="value">&nbsp;''</span></h4>
+	<p>[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a92">92</a>]</p>
+  the error message if one exists<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$headers"></a>
+	<p></p>
+	<h4>$headers = <span class="value">&nbsp;''</span></h4>
+	<p>[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a107">107</a>]</p>
+  the headers returned from the call made<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>array</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$response"></a>
+	<p></p>
+	<h4>$response = <span class="value">&nbsp;''</span></h4>
+	<p>[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a102">102</a>]</p>
+  the response message<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$throwExceptions"></a>
+	<p></p>
+	<h4>$throwExceptions = <span class="value">&nbsp;false</span></h4>
+	<p>[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a97">97</a>]</p>
+  whether to throw exceptions on error or not<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>boolean</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+
+  <hr />
+	<a name="method__construct"></a>
+	<h3>constructor __construct <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a126">126</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>facebookLib __construct(
+Array
+$config)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Initialize a Facebook Application.<br /><br /><p>The configuration: <ul><li>appId: the application API key</li><li>secret: the application secret</li><li>cookie: (optional) boolean true to enable cookie support</li><li>domain: (optional) domain for the cookie</li></ul></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">Array&nbsp;&nbsp;</td>
+        <td><b>$config</b>&nbsp;&nbsp;</td>
+        <td>the application configuration</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodcallApi"></a>
+	<h3>method callApi <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a1020">1020</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed callApi(
+[string
+$api = ''], [integer/string
+$userid = null], [boolean
+$returnLink = false], [boolean
+$nouid = false], [array
+$params = array()])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Internal Call to facebook graph API<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>response</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$api</b>&nbsp;&nbsp;</td>
+        <td>the API method we would like to call</td>
+      </tr>
+          <tr>
+        <td class="type">integer/string&nbsp;&nbsp;</td>
+        <td><b>$userid</b>&nbsp;&nbsp;</td>
+        <td>the user id or name we use to make the call</td>
+      </tr>
+          <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$returnLink</b>&nbsp;&nbsp;</td>
+        <td>if to perform a call or just return a link of that call instead</td>
+      </tr>
+          <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$nouid</b>&nbsp;&nbsp;</td>
+        <td>if we would like to perform the call without the user id in the link</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$params</b>&nbsp;&nbsp;</td>
+        <td>any additional parameters to pass to the call method</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddoCall"></a>
+	<h3>method doCall <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a851">851</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string doCall(
+string
+$url, [array
+$params = array()], [boolean
+$usepost = true])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		This function is used to<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>error message on failure mixed on success (based on the certain call can be an array or information, integer representing an id or a string)</td>
+  </tr>
+  <tr>
+    <td><b>throws:</b>&nbsp;&nbsp;</td><td>Exception</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$url</b>&nbsp;&nbsp;</td>
+        <td>the url we would like to parse</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$params</b>&nbsp;&nbsp;</td>
+        <td>array of post parameters to include in the call</td>
+      </tr>
+          <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$usepost</b>&nbsp;&nbsp;</td>
+        <td>whether to use a post request or a get request</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodget"></a>
+	<h3>method get <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a163">163</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array get(
+[mixed
+$id = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get information about a certain object  All objects in Facebook can be accessed in the same way<br /><br /><p><ul><li>Users: https://graph.facebook.com/btaylor (Bret Taylor)</li><li>Pages: https://graph.facebook.com/cocacola (Coca-Cola page)</li><li>Events: https://graph.facebook.com/251906384206 (Facebook Developer Garage Austin)</li><li>Groups: https://graph.facebook.com/2204501798 (Emacs users group)</li><li>Applications: https://graph.facebook.com/2439131959 (the Graffiti app)</li><li>Status messages: https://graph.facebook.com/367501354973 (A status message from Bret)</li><li>Photos: https://graph.facebook.com/98423808305 (A photo from the Coca-Cola page)</li><li>Photo albums: https://graph.facebook.com/99394368305 (Coca-Cola's wall photos)</li><li>Videos: https://graph.facebook.com/614004947048 (A Facebook tech talk on Tornado)</li><li>Notes: https://graph.facebook.com/122788341354 (Note announcing Facebook for iPhone 3.0)</li></ul></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>information related to that object</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$id</b>&nbsp;&nbsp;</td>
+        <td>the name or id of the object who's information we would like to retrieve                  If the param is null then it will fetch the current users information</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetBooks"></a>
+	<h3>method getBooks <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a267">267</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getBooks(
+[mixed
+$userid = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get the users books<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>information regarding the users books</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$userid</b>&nbsp;&nbsp;</td>
+        <td>the name or id of the object who's information we would like to retrieve                  If the param is null then it will fetch the current users information</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetDecodeJson"></a>
+	<h3>method getDecodeJson <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a837">837</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean getDecodeJson(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get the DecodeJson property status<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the decodeJson status</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetErrorCode"></a>
+	<h3>method getErrorCode <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a757">757</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>integer getErrorCode(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get the error code number<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>error code number</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetErrorMessage"></a>
+	<h3>method getErrorMessage <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a777">777</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getErrorMessage(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get the error code message<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>error code message</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetEventAttenders"></a>
+	<h3>method getEventAttenders <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a338">338</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getEventAttenders(
+mixed
+$eventid)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get the users that are attending to an event<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>information regarding the users who are attending to the event</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$eventid</b>&nbsp;&nbsp;</td>
+        <td>the id of the event we would like to see the attenders</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetEvents"></a>
+	<h3>method getEvents <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a315">315</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getEvents(
+[mixed
+$userid = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get the users events<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>information regarding the users event his attending</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$userid</b>&nbsp;&nbsp;</td>
+        <td>the name or id of the object who's information we would like to retrieve                  If the param is null then it will fetch the current users information</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetFriends"></a>
+	<h3>method getFriends <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a208">208</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getFriends(
+[mixed
+$userid = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get a users friends list<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>information regarding the user friends</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$userid</b>&nbsp;&nbsp;</td>
+        <td>the name or id of the object who's information we would like to retrieve                  If the param is null then it will fetch the current users information</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetGroups"></a>
+	<h3>method getGroups <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a327">327</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getGroups(
+[mixed
+$userid = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get the users groups<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>information regarding the users groups his a member of</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$userid</b>&nbsp;&nbsp;</td>
+        <td>the name or id of the object who's information we would like to retrieve                  If the param is null then it will fetch the current users information</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetHeaders"></a>
+	<h3>method getHeaders <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a737">737</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getHeaders(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get the headers<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the headers returned from the call</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetInfo"></a>
+	<h3>method getInfo <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a138">138</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getInfo(
+[string
+$id = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get users information (based on the permission you have)<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>List of information about the user</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$id</b>&nbsp;&nbsp;</td>
+        <td>the member profile id, If null will get the current authenticated user</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetLikes"></a>
+	<h3>method getLikes <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a243">243</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getLikes(
+[mixed
+$userid = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get all the likes a user made<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>information regarding the user likes</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$userid</b>&nbsp;&nbsp;</td>
+        <td>the name or id of the object who's information we would like to retrieve                  If the param is null then it will fetch the current users information</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetLinks"></a>
+	<h3>method getLinks <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a196">196</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getLinks(
+[mixed
+$userid = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get a users links<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>information regarding the user links</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$userid</b>&nbsp;&nbsp;</td>
+        <td>the name or id of the object who's information we would like to retrieve                  If the param is null then it will fetch the current users information</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetMovies"></a>
+	<h3>method getMovies <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a255">255</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getMovies(
+[mixed
+$userid = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get users movies<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>information regarding the users favorite movies</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$userid</b>&nbsp;&nbsp;</td>
+        <td>the name or id of the object who's information we would like to retrieve                  If the param is null then it will fetch the current users information</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetNewsFeed"></a>
+	<h3>method getNewsFeed <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a220">220</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getNewsFeed(
+[mixed
+$userid = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get a users news feed (the news appearing on his wall)<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>information regarding the users news feed wall</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$userid</b>&nbsp;&nbsp;</td>
+        <td>the name or id of the object who's information we would like to retrieve                  If the param is null then it will fetch the current users information</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetNotes"></a>
+	<h3>method getNotes <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a279">279</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getNotes(
+[mixed
+$userid = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get a users notes<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>information regarding the users notes</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$userid</b>&nbsp;&nbsp;</td>
+        <td>the name or id of the object who's information we would like to retrieve                  If the param is null then it will fetch the current users information</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetPhotos"></a>
+	<h3>method getPhotos <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a291">291</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getPhotos(
+[mixed
+$userid = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get the users photos<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>information regarding the users photos</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$userid</b>&nbsp;&nbsp;</td>
+        <td>the name or id of the object who's information we would like to retrieve                  If the param is null then it will fetch the current users information</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetPicture"></a>
+	<h3>method getPicture <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a184">184</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getPicture(
+[mixed
+$id = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get an object picture  The same URL pattern works for all objects in the graph:<br /><br /><p><ul><li>People: http://graph.facebook.com/vadim.v.gabriel/picture</li><li>Events: http://graph.facebook.com/331218348435/picture</li><li>Groups: http://graph.facebook.com/335845912900/picture</li><li>Pages: http://graph.facebook.com/DoloresPark/picture</li><li>Applications: http://graph.facebook.com/2318966938/picture</li><li>Photo Albums: http://graph.facebook.com/platform/picture</li></ul></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the link that will display the objects picture</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$id</b>&nbsp;&nbsp;</td>
+        <td>the name or id of the object who's information we would like to retrieve                  If the param is null then it will fetch the current users information</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetProfileFeed"></a>
+	<h3>method getProfileFeed <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a232">232</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getProfileFeed(
+[mixed
+$userid = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get a users profile feed (news from his profile only)<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>information regarding the users profile feed</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$userid</b>&nbsp;&nbsp;</td>
+        <td>the name or id of the object who's information we would like to retrieve                  If the param is null then it will fetch the current users information</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetResponse"></a>
+	<h3>method getResponse <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a817">817</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed getResponse(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get the response data<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the response data</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetSSLStatus"></a>
+	<h3>method getSSLStatus <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a717">717</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean getSSLStatus(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get the SSL check status<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the SSL Check status</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetThrowExceptions"></a>
+	<h3>method getThrowExceptions <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a797">797</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean getThrowExceptions(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get the throwExceptions<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the throwExceptions</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetVideos"></a>
+	<h3>method getVideos <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a303">303</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array getVideos(
+[mixed
+$userid = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Get the users videos<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>information regarding the users videos</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$userid</b>&nbsp;&nbsp;</td>
+        <td>the name or id of the object who's information we would like to retrieve                  If the param is null then it will fetch the current users information</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodincludeScript"></a>
+	<h3>method includeScript <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a680">680</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string includeScript(
+integer
+$appid, [string
+$status = 'true'], [string
+$cookie = 'true'], [string
+$xfbml = 'true'], [string
+$language = 'en_US'])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the generated script tag and div</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$appid</b>&nbsp;&nbsp;</td>
+        <td>the application id</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$status</b>&nbsp;&nbsp;</td>
+        <td>'true'/'false' whether to check the login status or not</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$cookie</b>&nbsp;&nbsp;</td>
+        <td>'true'/'false' whether to enable cookies to allow the server to access the session</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$xfbml</b>&nbsp;&nbsp;</td>
+        <td>'true'/'false' whether to enable parsing XFBML</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$language</b>&nbsp;&nbsp;</td>
+        <td>the language of the JS file loaded canonical ID for example 'en_US', 'he_IL' etc..</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodmakeRequest"></a>
+	<h3>method makeRequest <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a941">941</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>String makeRequest(
+String
+$url, Array
+$params, [CurlHandler
+$ch = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Makes an HTTP request. This method can be overriden by subclasses if  developers want to do fancier things or use something other than curl to  make the request.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the response text</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">String&nbsp;&nbsp;</td>
+        <td><b>$url</b>&nbsp;&nbsp;</td>
+        <td>the URL to make the request to</td>
+      </tr>
+          <tr>
+        <td class="type">Array&nbsp;&nbsp;</td>
+        <td><b>$params</b>&nbsp;&nbsp;</td>
+        <td>the parameters to use for the POST body</td>
+      </tr>
+          <tr>
+        <td class="type">CurlHandler&nbsp;&nbsp;</td>
+        <td><b>$ch</b>&nbsp;&nbsp;</td>
+        <td>optional initialized curl handle</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodpostAlbum"></a>
+	<h3>method postAlbum <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a493">493</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string postAlbum(
+[mixed
+$profileid = null], mixed
+$access_token, [array
+$params = array()])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Post a new album to a users profile<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>id of the newly created album</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$profileid</b>&nbsp;&nbsp;</td>
+        <td>the id of the object we would like to post an album                  If the param is null then it will fetch the current users information</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$access_token</b>&nbsp;&nbsp;</td>
+        <td>access_token of the currently logged in user</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$params</b>&nbsp;&nbsp;</td>
+        <td>list of additional parameters to pass                  This method supports the following parameters: <ul><li>name, message</li></ul></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodpostAttending"></a>
+	<h3>method postAttending <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a453">453</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean postAttending(
+mixed
+$eventid, mixed
+$access_token)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Attend an event<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>true/false on success</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$eventid</b>&nbsp;&nbsp;</td>
+        <td>the event id we would like to attend to</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$access_token</b>&nbsp;&nbsp;</td>
+        <td>access_token of the currently logged in user</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodpostComment"></a>
+	<h3>method postComment <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a381">381</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string postComment(
+mixed
+$postid, mixed
+$access_token, string
+$comment)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Post a comment on for a certain feed<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the id of the newly created comment</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$postid</b>&nbsp;&nbsp;</td>
+        <td>the id of the feed we would like to post a comment to</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$access_token</b>&nbsp;&nbsp;</td>
+        <td>access_token of the currently logged in user</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$comment</b>&nbsp;&nbsp;</td>
+        <td>the comment</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodpostEvent"></a>
+	<h3>method postEvent <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a441">441</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string postEvent(
+[mixed
+$profileid = null], mixed
+$access_token, [array
+$params = array()])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Post an event by a certain user<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>id of the newly created event</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$profileid</b>&nbsp;&nbsp;</td>
+        <td>the name or id of the object we would like to post an event                  If the param is null then it will fetch the current users information</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$access_token</b>&nbsp;&nbsp;</td>
+        <td>access_token of the currently logged in user</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$params</b>&nbsp;&nbsp;</td>
+        <td>list of additional parameters to pass                  This method supports the following parameters: <ul><li>name, start_time, end_time, description, owner, location</li></ul></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodpostFeed"></a>
+	<h3>method postFeed <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a368">368</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string postFeed(
+[mixed
+$profileid = null], mixed
+$access_token, [array
+$params = array()])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Post a feed to a users wall<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the id of the newly created feed</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$profileid</b>&nbsp;&nbsp;</td>
+        <td>the name or id of the object we would like to post a feed to it's wall                  If the param is null then it will fetch the current users information</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$access_token</b>&nbsp;&nbsp;</td>
+        <td>access_token of the currently logged in user</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$params</b>&nbsp;&nbsp;</td>
+        <td>list of additional parameters to pass                  This method supports the following parameters: <ul><li>message, picture, link, name, description</li></ul></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodpostLike"></a>
+	<h3>method postLike <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a393">393</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean postLike(
+mixed
+$postid, mixed
+$access_token)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Like a certain post feed<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>true/false on success</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$postid</b>&nbsp;&nbsp;</td>
+        <td>the name or id of the object we would like to like (feed)</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$access_token</b>&nbsp;&nbsp;</td>
+        <td>access_token of the currently logged in user</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodpostLink"></a>
+	<h3>method postLink <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a425">425</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string postLink(
+[mixed
+$profileid = null], mixed
+$access_token, [array
+$params = array()])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Post a link to a users wall<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the id of the newly created link</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$profileid</b>&nbsp;&nbsp;</td>
+        <td>the name or id of the object we would like to post a link to it's wall                  If the param is null then it will fetch the current users information</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$access_token</b>&nbsp;&nbsp;</td>
+        <td>access_token of the currently logged in user</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$params</b>&nbsp;&nbsp;</td>
+        <td>list of additional parameters to pass                  This method supports the following parameters: <ul><li>message, link</li></ul></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodpostMaybeAttending"></a>
+	<h3>method postMaybeAttending <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a477">477</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean postMaybeAttending(
+mixed
+$eventid, mixed
+$access_token)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Maybe Attend an event<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>true/false on success</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$eventid</b>&nbsp;&nbsp;</td>
+        <td>the event id we might attend</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$access_token</b>&nbsp;&nbsp;</td>
+        <td>access_token of the currently logged in user</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodpostNotAttending"></a>
+	<h3>method postNotAttending <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a465">465</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean postNotAttending(
+mixed
+$eventid, mixed
+$access_token)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Decline an event<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>true/false on success</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$eventid</b>&nbsp;&nbsp;</td>
+        <td>the event id we would not like to attend</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$access_token</b>&nbsp;&nbsp;</td>
+        <td>access_token of the currently logged in user</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodpostNote"></a>
+	<h3>method postNote <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a409">409</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string postNote(
+[mixed
+$profileid = null], mixed
+$access_token, [array
+$params = array()])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Post a note to a users wall<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the id of the newly created note</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$profileid</b>&nbsp;&nbsp;</td>
+        <td>the name or id of the object we would like to post a note to it's wall                  If the param is null then it will fetch the current users information</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$access_token</b>&nbsp;&nbsp;</td>
+        <td>access_token of the currently logged in user</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$params</b>&nbsp;&nbsp;</td>
+        <td>list of additional parameters to pass                  This method supports the following parameters: <ul><li>message, subject</li></ul></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodpostPhoto"></a>
+	<h3>method postPhoto <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a507">507</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string postPhoto(
+mixed
+$albumid, mixed
+$access_token, string
+$message)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Upload a photo to an album<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>id of the newly created photo</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$albumid</b>&nbsp;&nbsp;</td>
+        <td>the id of the object we would like to upload a photo to                  If the param is null then it will fetch the current users information</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$access_token</b>&nbsp;&nbsp;</td>
+        <td>access_token of the currently logged in user</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$message</b>&nbsp;&nbsp;</td>
+        <td>the message describing the photo</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodpostStatus"></a>
+	<h3>method postStatus <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a352">352</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string postStatus(
+[mixed
+$profileid = null], mixed
+$access_token, string
+$message)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Post a status update<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the id of the newly created status</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$profileid</b>&nbsp;&nbsp;</td>
+        <td>the name or id of the object we would like to post a update his status                  If the param is null then it will fetch the current users information</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$access_token</b>&nbsp;&nbsp;</td>
+        <td>access_token of the currently logged in user</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$message</b>&nbsp;&nbsp;</td>
+        <td>the status message</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsearch"></a>
+	<h3>method search <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a527">527</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array search(
+mixed
+$type, mixed
+$query, [array
+$params = array()])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Search for a certain object<br /><br /><p>All public posts: <ul><li>https://graph.facebook.com/search?q=watermelon&amp;type=post</li><li>People: https://graph.facebook.com/search?q=mark&amp;type=user</li><li>Pages: https://graph.facebook.com/search?q=platform&amp;type=page</li><li>Events: https://graph.facebook.com/search?q=conference&amp;type=event</li><li>Groups: https://graph.facebook.com/search?q=programming&amp;type=group</li></ul></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>search results</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$type</b>&nbsp;&nbsp;</td>
+        <td>type of the search</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$query</b>&nbsp;&nbsp;</td>
+        <td>query the query to search for</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$params</b>&nbsp;&nbsp;</td>
+        <td>list of additional parameters to pass</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetDecodeJson"></a>
+	<h3>method setDecodeJson <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a827">827</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../Facebook/facebookLib.html">facebookLib</a> setDecodeJson(
+[boolean
+$status = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the Json Decode property<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>object</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$status</b>&nbsp;&nbsp;</td>
+        <td>the json decode status</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetErrorCode"></a>
+	<h3>method setErrorCode <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a747">747</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../Facebook/facebookLib.html">facebookLib</a> setErrorCode(
+[integer
+$code = 0])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the error code number<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>object</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$code</b>&nbsp;&nbsp;</td>
+        <td>the error code number</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetErrorMessage"></a>
+	<h3>method setErrorMessage <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a767">767</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../Facebook/facebookLib.html">facebookLib</a> setErrorMessage(
+[string
+$message = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the error message<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>object</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$message</b>&nbsp;&nbsp;</td>
+        <td>the error message</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetHeaders"></a>
+	<h3>method setHeaders <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a727">727</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../Facebook/facebookLib.html">facebookLib</a> setHeaders(
+[array
+$headers = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the headers<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>object</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$headers</b>&nbsp;&nbsp;</td>
+        <td>the headers array</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetResponse"></a>
+	<h3>method setResponse <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a807">807</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../Facebook/facebookLib.html">facebookLib</a> setResponse(
+[mixed
+$response = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the response<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>object</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$response</b>&nbsp;&nbsp;</td>
+        <td>the response returned from the call</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetSSLStatus"></a>
+	<h3>method setSSLStatus <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a707">707</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../Facebook/facebookLib.html">facebookLib</a> setSSLStatus(
+[boolean
+$status = false])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the SSL Check status<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>object</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$status</b>&nbsp;&nbsp;</td>
+        <td>the SSL check status</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetThrowExceptions"></a>
+	<h3>method setThrowExceptions <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a787">787</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code><a href="../Facebook/facebookLib.html">facebookLib</a> setThrowExceptions(
+[boolean
+$status = true])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the throwExceptions status<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>object</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$status</b>&nbsp;&nbsp;</td>
+        <td>the throwExceptions status</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodshowActivity"></a>
+	<h3>method showActivity <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a543">543</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string showActivity(
+string
+$site, [integer
+$width = 300], [integer
+$height = 300], [string
+$header = 'true'], [string
+$color = 'light'], [boolean
+$fbml = true])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Display the facebook social plugin activity box<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the generated iframe</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$site</b>&nbsp;&nbsp;</td>
+        <td>the site url we would like to get the activity from</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$width</b>&nbsp;&nbsp;</td>
+        <td>the width of the activity box</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$height</b>&nbsp;&nbsp;</td>
+        <td>the height of the activity box</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$header</b>&nbsp;&nbsp;</td>
+        <td>'true'/'false' display the activity box header or not</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$color</b>&nbsp;&nbsp;</td>
+        <td>'light'/'dark' the activity box color scheme</td>
+      </tr>
+          <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$fbml</b>&nbsp;&nbsp;</td>
+        <td>whether we would like to use the fb:activity fbml tag or an iframe</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodshowComments"></a>
+	<h3>method showComments <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a560">560</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string showComments(
+[integer
+$id = 'widget'], [integer
+$width = 500], [integer
+$numposts = 10])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Display the facebook social plugin comments box<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the generated fb:comments tag</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$id</b>&nbsp;&nbsp;</td>
+        <td>unique id of this widget</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$width</b>&nbsp;&nbsp;</td>
+        <td>the width of the comments box</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$numposts</b>&nbsp;&nbsp;</td>
+        <td>number of posts to show in the comments box</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodshowFacePile"></a>
+	<h3>method showFacePile <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a572">572</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string showFacePile(
+[integer
+$width = 200], [integer
+$numrows = 10])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Display the facebook social plugin face pile<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the generated fb:facepile</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$width</b>&nbsp;&nbsp;</td>
+        <td>the width of the face pile box</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$numrows</b>&nbsp;&nbsp;</td>
+        <td>number of rows to display</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodshowLike"></a>
+	<h3>method showLike <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a589">589</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string showLike(
+string
+$url, [string
+$layout = 'standard'], [string
+$showfaces = 'true'], [integer
+$width = 450], [string
+$action = 'like'], [string
+$color = 'light'], [boolean
+$fbml = true])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Display the facebook social plugin like button<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the generated iframe</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$url</b>&nbsp;&nbsp;</td>
+        <td>the url we would like to like</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$layout</b>&nbsp;&nbsp;</td>
+        <td>the layout of the like button</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$showfaces</b>&nbsp;&nbsp;</td>
+        <td>'true'/'false' whether to show faces under the like button</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$width</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$action</b>&nbsp;&nbsp;</td>
+        <td>'like'/'recommended' the action name</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$color</b>&nbsp;&nbsp;</td>
+        <td>'light'/'dark' the activity box color scheme</td>
+      </tr>
+          <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$fbml</b>&nbsp;&nbsp;</td>
+        <td>whether we would like to use the fb:activity fbml tag or an iframe</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodshowLikeBox"></a>
+	<h3>method showLikeBox <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a614">614</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string showLikeBox(
+integer
+$profileid, [integer
+$width = 292], [integer
+$connections = 10], [string
+$stream = 'true'], [string
+$header = 'true'])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		The Like Box is a social plugin that enables Facebook Page owners to attract and gain Likes from their own website.<br /><br /><p>The Like Box enables users to:</p><p><ul><li>See how many users already like this page, and which of their friends like it too</li><li>Read recent posts from the page</li><li>Like the page with one click, without needing to visit the page</li></ul></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the generated iframe</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$profileid</b>&nbsp;&nbsp;</td>
+        <td>the profile id of the page we would like to show likes from</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$width</b>&nbsp;&nbsp;</td>
+        <td>the width of the like box widget</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$connections</b>&nbsp;&nbsp;</td>
+        <td>the number of connections to show</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$stream</b>&nbsp;&nbsp;</td>
+        <td>'true'/'false' whether to show the page public stream or not</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$header</b>&nbsp;&nbsp;</td>
+        <td>'true'/'false' whether to show the header in the box or not</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodshowLiveStream"></a>
+	<h3>method showLiveStream <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a629">629</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string showLiveStream(
+integer
+$appid, [integer
+$width = 400], [integer
+$height = 500], [mixed
+$xid = 'livestream'])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		The Live Stream plugin lets users visiting your site or application share activity and comments in real time.<br /><br /><p>The Live Stream Box works best when you are running a real-time event, like live streaming video for concerts, speeches, or webcasts, live Web chats, webinars, massively multiplayer games.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the live stream widget</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$appid</b>&nbsp;&nbsp;</td>
+        <td>the application id to show the live stream from</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$width</b>&nbsp;&nbsp;</td>
+        <td>the width of the live stream box</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$height</b>&nbsp;&nbsp;</td>
+        <td>the height of the live stream box</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$xid</b>&nbsp;&nbsp;</td>
+        <td>the live stream unique id (if you have more then one live stream on the page then enter a unique name for each one)</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodshowLoginButton"></a>
+	<h3>method showLoginButton <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a642">642</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string showLoginButton(
+[string
+$showfaces = 'true'], [integer
+$width = 200], [integer
+$maxrows = 1])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		The Login with Faces plugin shows profile pictures of the user's friends who have already signed up for your site in addition to a login button.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the login button fbml tag</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$showfaces</b>&nbsp;&nbsp;</td>
+        <td>'true'/'false' whether to show the faces of the facebook users who already use this application</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$width</b>&nbsp;&nbsp;</td>
+        <td>the width of the facebook login button</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$maxrows</b>&nbsp;&nbsp;</td>
+        <td>number of rows to display the faces in</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodshowRecommendations"></a>
+	<h3>method showRecommendations <span class="smalllinenumber">[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a661">661</a>]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string showRecommendations(
+string
+$url, [integer
+$width = 300], [integer
+$height = 300], [string
+$header = 'true'], [string
+$color = 'light'], [boolean
+$fbml = true])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		The Recommendations plugin shows personalized recommendations to your users.<br /><br /><p>Since the content is hosted by Facebook, the plugin can display personalized recommendations whether or not the user has logged into your site.  To generate the recommendations, the plugin considers all the social interactions with URLs from your site.  For a logged in Facebook user, the plugin will give preference to and highlight objects her friends have interacted with.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>the recommendations fbml tag or iframe</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$url</b>&nbsp;&nbsp;</td>
+        <td>the url we would like to show the recommendations from</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$width</b>&nbsp;&nbsp;</td>
+        <td>the width of the recommendations box</td>
+      </tr>
+          <tr>
+        <td class="type">integer&nbsp;&nbsp;</td>
+        <td><b>$height</b>&nbsp;&nbsp;</td>
+        <td>the height of the recommendations box</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$header</b>&nbsp;&nbsp;</td>
+        <td>'true'/'false' whether to include the header of the recommendations box</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$color</b>&nbsp;&nbsp;</td>
+        <td>'light'/'dark' display the recommendations box in a certain color scheme</td>
+      </tr>
+          <tr>
+        <td class="type">boolean&nbsp;&nbsp;</td>
+        <td><b>$fbml</b>&nbsp;&nbsp;</td>
+        <td>whether to show the recommendation box using facebook fbml tag or an iframe</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+<hr />
+<a name="class_consts"></a>
+<h3>Class Constants</h3>
+<div class="tags">
+	<a name="constVERSION"></a>
+	<p></p>
+	<h4>VERSION = <span class="value">&nbsp;'0.1a'</span></h4>
+	<p>[line <a href="../__filesource/fsource_Facebook__facebookLib.php.html#a50">50</a>]</p>
+  Library version<br /><br />
+  <br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Wed, 05 May 2010 12:52:59 +0300 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

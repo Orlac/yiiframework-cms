@@ -1,0 +1,76 @@
+body {
+		direction: rtl; 
+		text-align: right;
+		background-position: right top;
+	}
+
+#main-content  {
+	margin:0 260px 0 30px;
+}
+
+#sidebar
+{
+	left: auto;
+	right: 0;
+}
+
+#sidebar #sidebar-title {
+margin:40px 40px 40px 15px;
+}
+
+.content-box-header h3
+{
+	float: right;
+}
+
+caption, th, td
+{
+	text-align: right;
+}
+
+.align-left
+{
+	float: right;
+}
+
+.align-right
+{
+	float: left;
+}
+
+#main-content .pagination
+{
+	text-align: left;
+}
+
+.floatright
+{
+	text-align: left;
+}
+
+.floatleft
+{
+	text-align: right;
+}
+
+ul.content-box-tabs {
+float:left;
+margin:0 !important;
+padding:12px 15px 0 15px !important;
+}
+
+.input-notification  {
+background-position:right 2px;
+padding:2px 22px;
+}
+
+.notification .close
+{
+	left: 5px;
+	right: auto;
+}
+
+.notification  {
+background-position:right center !important;
+padding-right: 10px;
+}

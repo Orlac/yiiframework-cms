@@ -1,0 +1,19 @@
+ul.toc ul { padding-left: 1.0em; margin:0 0.5em 0.5em 0; }
+
+ul.toc li.selected {padding-left: 1.5em;}
+
+.boxed_page ul, .boxed_page ul li { list-style-type: disc; }
+
+.header { padding-top: 0px; padding-bottom: 5px; }
+ul, ul li {list-style-type: none;}
+ol, ol li {list-style-type: decimal;}
+ul, ol { padding-left:2.0em; }
+
+fieldset    { padding:1.4em; margin: 0 0 1.5em 0; border: 1px solid #ccc; }
+
+blockquote.tip, blockquote.info, blockquote.note 
+{
+	padding: 10px 2em 10px 55px;
+}
+
+ul.toc li {cursor: pointer;}

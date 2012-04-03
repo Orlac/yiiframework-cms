@@ -1,0 +1,36 @@
+ * התחלה
+    - [סקירה](start.overview)
+    - [שלד האפליקציה](start.testdrive)
+    - [ניתוח הדרישות](start.requirements)
+    - [עיצוב כללי](start.design)
+
+* דיגום ראשוני
+    - [הגדרת מסד נתונים](prototype.database)
+    - [פיגומים (יצירת קוד אוטומטית)](prototype.scaffold)
+    - [אימות משתמשים](prototype.auth)
+    - [סיכום](prototype.summary)
+
+* ניהול הודעות
+    - [התאמה אישית של מודל ההודעות](post.model)
+    - [יצירה ועדכון הודעות](post.create)
+    - [תצוגת הודעות](post.display)
+    - [ניהול הודעות](post.admin)
+
+* ניהול תגובות
+    - [התאמה אישית של מודל תגובות](comment.model)
+    - [כתיבה ועדכון תגובות](comment.create)
+    - [ניהול תגובות](comment.admin)
+
+* וידג'טים
+    - [יצירת וידג'ט תפריט משתמשים](portlet.menu)
+    - [יצירת וידג'ט ענן תגיות](portlet.tags)
+    - [יצירת וידג'ט תגובות אחרונות](portlet.comments)
+
+* עבודה מסכמת
+    - [קישורים ידידותיים](final.url)
+    - [תיעוד שגיאות](final.logging)
+    - [כיוון סופי ופריסת האפליקציה](final.deployment)
+    - [שיפורים עתידיים](final.future)
+
+<div class="revision">$Id: toc.txt 1734 2010-01-21 18:41:17Z qiang.xue $</div>
+

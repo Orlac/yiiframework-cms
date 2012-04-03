@@ -1,0 +1,41 @@
+body {
+	/*behavior:url(csshover.htc);*/
+}
+#menuslide li {
+	background: url(../images/sepslide.png) no-repeat 2px 100%;
+}
+.placerelease1, .placerelease2 {
+	margin: -8px 5px 0 0;
+}
+#menuslide .ui-tabs-selected a, #menuslide .ui-tabs-selected a:link, #menuslide .ui-tabs-selected a:visited {
+	background:url(../images/arrow_slideie.gif) no-repeat 9px 14px;
+}
+.butmore, .butmore:link, .butmore:visited {
+	background: url(../images/but_moreie.gif) no-repeat;
+}
+.butmore:hover {
+	background-position:0 -35px;
+	color: #fff;
+	text-decoration: none;
+}
+#contenttop {
+	background: url(../images/content_topie.gif) no-repeat;
+}
+#content {
+	background: url(../images/content_backie.gif) repeat-y;
+}
+#newsinfo {
+	background: url(../images/icon_10ie.gif) no-repeat 8px 5px;
+}
+.listfeatureslide li {
+	margin: 0;
+}
+.textpopup1 span {
+	margin: -15px 0 0 0;
+}
+#content {
+	padding: 0 17px;
+}
+#menufooter {
+	margin: -5px 0 0 0;
+}
