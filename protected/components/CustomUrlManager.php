@@ -105,11 +105,35 @@ class CustomUrlManager extends CUrlManager {
 					"<lang:({$active_lang})>/<_c:([a-zA-z0-9-]+)>" => 'site/<_c>/index',
 		            "<lang:({$active_lang})>/<_c:([a-zA-z0-9-]+)>/<_a:([a-zA-z0-9-]+)>" => 'site/<_c>/<_a>',
 		            "<lang:({$active_lang})>/<_c:([a-zA-z0-9-]+)>/<_a:([a-zA-z0-9-]+)>//*" => 'site/<_c>/<_a>/',
+					
+					// Site Map
+					"http://{$domain}/sitemap" => array('site/sitemap/index', 'urlSuffix'=>'.xml', 'caseSensitive'=>false),
+					
+					// Tutorials
+					"http://{$domain}/tutorials/category/<alias:(.*)>" => array('site/tutorials/viewcategory'),
+					"http://{$domain}/tutorials/view/<alias:(.*)>" => array('site/tutorials/viewtutorial'),
+					
+					// Blogs
+					"http://{$domain}/blog/category/<alias:(.*)>" => array('site/blog/viewcategory'),
+					"http://{$domain}/blog/view/<alias:(.*)>" => array('site/blog/viewpost'),
+					
+					// Extensions
+					"http://{$domain}/extensions/category/<alias:(.*)>" => array('site/extensions/viewcategory'),
+					"http://{$domain}/extensions/view/<alias:(.*)>" => array('site/extensions/viewpost'),
+					"http://{$domain}/extensions/download/<fileid:(\d+)>-<alias:(.*)>" => array('site/extensions/download'),
+					
+					// User profile
+					"http://{$domain}/user/<uid:(\d+)>-<alias:(.*)>" => array('site/users/viewprofile'),
+					
+					// Forum Topics
+					"http://{$domain}/forum/topic/<topicid:(\d+)>-<alias:(.*?)>/*" => array('site/forum/viewtopic'),
+					
 	            
 		            );
 			}
 		
 			$urlrules = array_merge( $_more, $this->rules );
+			$urlrules = array_merge( $urlrules, array(  "<alias:[0-9a-zA-Z_\-]+>/*"=>'site/custompages/index') );
 			Yii::app()->cache->set('customurlrules', $urlrules);
 		}
 		
