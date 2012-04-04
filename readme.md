@@ -19,3 +19,13 @@ Installation steps
   and use the following username and password to access the admin panel and have the admin role permissions:
   - User: admin
   - Password: admin
+
+
+Contributing
+=======================
+
+If you wish to contribute please follow these steps:
+
+- Fork the source code
+- Create an issue for what ever you're working on
+- Push the code to a branch and then open a pull request
